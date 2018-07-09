@@ -1,4 +1,4 @@
-package principal;
+         package principal;
 
 import principal.control.GestorControles;
 import principal.graficos.SuperficieDeDibujo;
@@ -19,6 +19,8 @@ public class GestorPrincipal {
     private Ventana ventana;
     private GestorDeEstados ge;
     
+    private Sonido musica = new Sonido("/sonidos/musica.wav");
+    
     private static int fps = 0;
     private static int aps = 0;
 
@@ -38,6 +40,7 @@ public class GestorPrincipal {
     private void iniciarJuego() {
         enFuncionamiento = true;
         inicializar();
+        musica.repetir();
     }
 
     private void iniciarBuclePrincipal() {

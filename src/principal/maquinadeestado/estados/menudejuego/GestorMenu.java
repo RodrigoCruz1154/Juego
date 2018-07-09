@@ -16,6 +16,7 @@ public class GestorMenu implements EstadoJuego{
     public void dibujar(Graphics g) {
         g.setColor(Color.CYAN);
         DibujoDebug.dibujarRectanguloContorno(g, 100, 100,100,100);
+        g.drawString("PAUSA", 100, 100);
     }
     
 }
